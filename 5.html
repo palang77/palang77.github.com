@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>드래그 test</title>
+	<style>
+	.dragable_layer {position:fixed;bottom:0;left:0;right:0;background:#ddd;padding:20px 20px;}
+	.dragable_layer .close {height: 40px; position: absolute; top: -40px; background: #acacac; left: 0; right: 0;}
+	.dragable_layer h2{} /* margin:0; margin-bottom:20px */
+	</style>
+</head>
+<body>
+<div id="lipsum" style="position: absolute; top: 0; left: 0; right: 0; bottom: 0; overflow: auto;">
+	<h2>Lipsum4</h2>
+	<p>
+	Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent sit amet purus odio. Curabitur ex arcu, lacinia a velit ut, vulputate dapibus dolor. Nullam cursus, augue eget vulputate ultrices, enim tellus malesuada sapien, vitae eleifend nibh quam nec mauris. Integer dapibus id felis pellentesque pulvinar. Morbi tristique nibh mi, vitae cursus velit finibus sit amet. Vestibulum vitae urna a massa molestie malesuada at sit amet ex. In euismod velit leo, vel porta nulla imperdiet ac. Pellentesque nulla massa, mollis a nulla et, ultrices rhoncus quam. Integer vitae lacus convallis sem mattis ullamcorper eu a odio. Phasellus aliquet sagittis ex, non dictum sem laoreet sed. Morbi convallis turpis interdum neque laoreet venenatis. Curabitur interdum blandit magna, nec vulputate ante tempus non. Integer risus tortor, commodo sed elementum ac, pellentesque eu libero. Sed et arcu ex.
+	</p>
+	<p>
+	Praesent gravida malesuada sapien rhoncus sagittis. In hac habitasse platea dictumst. Fusce mollis tellus et mauris finibus, in convallis nisi tristique. Quisque fringilla, eros ut faucibus ullamcorper, augue elit facilisis arcu, id laoreet nunc justo sit amet augue. Pellentesque dignissim lectus non quam mollis tristique. Suspendisse ut ex sed felis volutpat hendrerit. Phasellus tristique a leo sed dapibus. Curabitur scelerisque ligula id ante pellentesque porttitor. Maecenas placerat bibendum ligula nec aliquam. Cras id aliquet augue, sit amet ornare neque. Donec malesuada, risus et imperdiet rutrum, justo leo fringilla tellus, facilisis faucibus magna nisl ut massa. Phasellus posuere non quam vel suscipit. Sed sed orci mi. Duis auctor sollicitudin magna nec tincidunt. Sed arcu tellus, iaculis quis mollis et, ornare id sapien. Nulla aliquam, neque et porttitor mattis, neque turpis consectetur velit, quis egestas ligula sapien in lacus.
+	</p>
+	<p>
+	Etiam vel turpis sem. Nullam venenatis imperdiet vestibulum. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. In quam massa, laoreet eget finibus placerat, varius ut sem. Donec dignissim, erat id ornare rutrum, erat nibh laoreet erat, non dignissim ligula nulla ac augue. Suspendisse quis libero pharetra augue tincidunt vehicula vel vulputate justo. Donec lobortis tincidunt eros, non venenatis dolor venenatis nec. Nullam gravida diam quis massa aliquet, id bibendum leo sagittis.
+	</p>
+
+</div>
+
+<div id="dragable_layer" class="dragable_layer">
+	<div class="close">close</div>
+	<div class="dragble_layer_content">
+		<h2>Dragable Layer</h2>
+		<p>
+			Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent sit amet purus odio. 
+			Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent sit amet purus odio. 
+			Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent sit amet purus odio. 			
+			Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent sit amet purus odio. 
+			Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent sit amet purus odio. 
+			Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent sit amet purus odio. 			
+			Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent sit amet purus odio. 
+			Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent sit amet purus odio. 
+			Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent sit amet purus odio. 			
+			Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent sit amet purus odio. 
+			Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent sit amet purus odio. 
+			Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent sit amet purus odio. 					
+		</p>
+
+	</div>
+</div>
+
+<script src="js/jquery-3.1.0.min.js"></script>
+<script src="js/jquery-migrate-3.0.0.min.js"></script>
+<script src="js/jquery-ui-draggable.min.js"></script>
+<script src="js/jquery.ui.touch-punch.min.js"></script>
+<script>
+
+(function($){
+    $(document).ready(function(){
+        var layer = $('.dragable_layer');
+        var docu_h = $(window).outerHeight();
+        var layer_h = $('.dragable_layer').outerHeight()
+//        var layer_hh = $('.dragable_layer .open_view').outerHeight();        
+
+        $('html, body').animate({
+            scrollTop: $(document).scrollTop() - 50
+        }, 250);
+
+        var max = docu_h - layer_h;
+        var mid = docu_h/2;
+//        var min = docu_h - layer_hh;
+        var max2 = max < 40 ? 40 : max;    //닫기 영역 40px
+        var lyTop = 0;
+        
+        var status = "";
+
+        if (layer_h < mid) {
+           lyTop = max;
+           status = "none";
+        } else {
+           lyTop = mid;
+           status = "min";
+        }
+
+	      dragable_layer.style.top = lyTop + "px";
+        
+//        layer.delay(10).animate({
+//            'top': lyTop + 'px'
+//        }, 300);
+        
+//        console.log( max2 + ' : ' + min );
+//        console.log( layer_h );
+
+        layer.draggable({
+            axis: 'y',
+            /*revert: true,*/
+            start: function(){
+                console.log( 'start drag!' + ' : ' + status );
+            },
+            drag: function() {
+                console.log( 'dragging!: ' + layer.css('top') );
+                if( status === 'none' ) {
+                    return false;
+                }
+                if( status === 'min' && parseFloat(layer.css('top')) < max2 ) {
+                    return false;
+                }
+                if( status === 'max' && parseFloat(layer.css('top')) > mid ) {
+                    return false;
+                }
+            },
+            stop: function() {
+                console.log( 'stop drag!' + ' : ' + status );
+
+             // 위아래 드래그
+                if( status === 'min'){
+					if(parseFloat(layer.css('top')) < mid ) {
+                    	status = 'max';
+                    	layer.stop().animate({
+                        	'top': max2
+                    	}, 300);
+              		  } else {
+                  		  layer.stop().animate({
+                      	  'top': mid
+                  	  }, 300);
+            	    }
+				} else if( status === 'max'){
+					if(parseFloat(layer.css('top')) > max2 ) {
+				                    status = 'min';
+				                    layer.stop().animate({
+				                        'top': mid
+				                    });
+                } else {
+                    layer.stop().animate({
+                        'top': max2
+                    });
+                }
+            }
+             
+            }
+        });
+    });
+})(jQuery);
+
+</script>
+
+</body>
+</html>
