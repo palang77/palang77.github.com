@@ -1,0 +1,299 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, target-densitydpi=medium-dpi, user-scalable=yes">
+<meta name="format-detection" content="telephone=no"/>
+<title></title>
+
+<link type="text/css" rel="stylesheet" href="../../common/css/base.css" />
+<link type="text/css" rel="stylesheet" href="../../common/css/common.css" />
+<link type="text/css" rel="stylesheet" href="../../common/css/product.css" />
+<script type="text/javascript" language="javascript" src="../../common/js/jquery-3.4.1.min.js"></script>
+<script type="text/javascript" language="javascript" src="../../common/js/ui.js"></script>
+
+</head>
+<body>
+<!-- wrap -->
+<div class="wrap">
+	<div class="header">
+		<div class="left"><a href="javascript:void(0);" class="close"><i class="ico ico_x2"></i></a></div>
+		<div class="tit_wrapper pd_wrapper">
+			<h1 class="title">수수료안내</h1>
+		</div>
+	</div>
+	<!-- container -->
+	<div class="container">		
+		<!-- content -->
+		<div class="content">
+			<!-- 해당클래스 -->
+			<div class="product_detail_area fees_guide_area">
+				<div class="pd_wrapper fees_guide_wrap">
+					<div class="paragraph type1">
+						<div class="tit_type2"><b>판매수수료[후취]</b></div>
+						<div class="tbl type1 tbl_border td_center">
+							<table>
+								<caption>판매수수료</caption>
+								<colgroup>
+									<col width="50%">
+									<col width="50%">
+								</colgroup>
+								<thead>
+									<tr>
+										<th scope="col">투자기간</th>
+										<th scope="col">자유적립식</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>365일 미만</td>
+										<td>환매금액 0.05%</td>
+									</tr>
+									<tr>
+										<td>1095일 미만</td>
+										<td>환매금액 0.02%</td>
+									</tr>
+									<tr>
+										<td>1095일 이상</td>
+										<td>면제</td>
+									</tr>
+								</tbody>
+							</table>
+							<div class="text_dot fs12">레버리지, 엄브렐라 펀드의 경우 후취판매수수료 면제(0%)</div>
+						</div>	
+							
+						<div class="t_fees_guide">
+							<div class="tit_type2"><b>보수 및 비용</b></div>
+							<div class="tbl type1 tbl_border td_center">
+								<table>
+									<caption>보수 및 비용</caption>
+									<colgroup>
+										<col width="31%">
+										<col width="69%">
+									</colgroup>
+									<thead>
+										<tr>
+											<th scope="col">구분</th>
+											<th scope="col">지급비율(연간)</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td>판매보수</td>
+											<td>0.29%</td>
+										</tr>
+										<tr>
+											<td>운용보수</td>
+											<td>1.03%</td>
+										</tr>
+										<tr>
+											<td>수탁보수</td>
+											<td>0.07%</td>
+										</tr>
+										<tr>
+											<td>사무보수</td>
+											<td>0.02%</td>
+										</tr>													
+									</tbody>
+									<tfoot>
+										<tr>
+											<td><b>총보수</b></td>
+											<td><b>1.41%</b></td>
+										</tr>	
+									</tfoot>
+								</table>
+							</div>
+						</div><!-- t_fees_guide// -->
+						
+						<div class="tit_type2"><b>환매수수료 :</b> 없음</div>
+						
+						<div class="t_fees_graph_wrap">
+							<div class="tit_type2"><b>비용비교</b></div>
+							<div class="t_fess_desc">
+								선택하신 S클래스 펀드에
+								<span class="c_blue1"> 3년간 1000만원</span>을<br> 투자한다면, 일반 클래스 펀드 보다 <br>
+								<span class="c_blue1">201,760원 절약</span>할 수 있습니다.
+							</div>
+							<div class="t_fees_graph">
+								<div id="chart"></div>
+							</div>							
+						</div>
+						
+						<div class="text_dot fs12">판매수수료를 제외한 클래스별 판매보수 차이에 따른 투자 절약비용을 계산하며, 전체 비용은 상이할 수 있습니다.</div>
+
+						<div class="t_fees_guide_t2">
+							<div class="tit_type3"><b>[다른 클래스 비용 비교]</b></div>
+							<div class="tbl type1 tbl_border td_center th_center">
+								<table>
+									<caption>판매수수료</caption>
+									<colgroup>
+										<col width="16%">
+										<col width="43%">
+										<col width="25%">
+										<col width="16%">
+									</colgroup>
+									<thead>
+										<tr>
+											<th scope="col">클래스</th>
+											<th scope="col">투자기간</th>
+											<th scope="col">총보수</th>
+											<th scope="col">환매<br/>수수료</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<th scope="row">A</th>
+											<td>매입 시<br/>투자금액의 1% 이내</td>
+											<td>연 1.70%</td>
+											<td>없음</td>
+										</tr>
+										<tr>
+											<th scope="row">C</th>
+											<td>-</td>
+											<td>연 2.05%</td>
+											<td>없음</td>
+										</tr>
+										<tr>
+											<th scope="row">S</th>
+											<td>3년 미만 환매 시, 환매금액의 0.155% 이내</td>
+											<td>연 1.70%</td>
+											<td>없음</td>
+										</tr>									
+									</tbody>
+								</table>
+							</div>
+						</div>
+
+						<div class="box_line_type2">
+							<div class="line"></div>
+						</div>						
+						
+																		
+						<!-- 안내사항 -->
+						<div class="info_guide">
+							<p class="title">이용안내</p>
+							<ul class="list">
+								<li>펀드는 간접투자 상품으로 전문가가 대신 운용하는 대가로 각종 비용이 발생합니다.</li>
+								<li>펀드 가입자가 부담해야 하는 비용에는 수수료와 보수가있습니다. 보수는 일정 기간마다 정기적으로 부과되는 반면, 수수료는 한 번만 납부하는 일회성 비용입니다.</li>
+								<li>판매(후취)수수료는 펀드를 환매할 때(후취) 부과되는 수수료입니다.</li>
+								<li>가입하신 펀드의 투자자에게 직접 부과되는 수수료와 집합투자기구에서 부과하는 보수 및 비용내역을 조회할 수 있습니다.</li>
+								<li>운용보수, 판매보수, 신탁보수, 사무관리의 지급시기는 최초설정일로부터 매 3개월 후급이며, 기타비용은 사유발생시지급됩니다.</li>
+								<li>기타비용이란 회계감사비용, 증권 등의 예탁 및 결제비용 등 펀드에서 경상적, 반복적으로 지출된 비용으로서 증권거래비용은 제외한 것입니다.</li>
+							</ul>
+						</div>	
+					</div>
+				</div>
+			</div>
+			<!-- //  -->
+		</div>
+		<!-- // content -->
+	</div>	
+	<!-- // container -->	
+
+	<!-- footer -->
+	<div class="footer">
+		<!-- btn_area -->
+		<div class="btn_area">
+			<div class="btn_type1_box">
+				<a href="javascript:void(0);" class="btn_type1 btn2">확인</a>
+			</div>
+		</div>
+		<!-- // btn_area -->
+	</div>	
+	<!-- // footer -->
+</div>
+<!-- // wrap -->
+
+<!-- highcharts -->
+<script src="../../common/js/highcharts.js"></script>
+<script>
+function numberWithCommas(x) {
+    return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+}
+
+Highcharts.setOptions({
+	colors: ['#1f5dbe', '#dddddd'],
+	lang: {
+		thousandsSep: ','
+	}    
+});
+
+Highcharts.chart('chart', {
+	chart: {
+		type: 'bar',
+		marginRight: 30,
+		
+	},
+	title: {text:null},
+	subtitle: {text: null},
+	xAxis: {	
+		type: 'category',
+		labels: {
+			 formatter: function () {return this.value;},
+			style: {
+			   fontSize: '12px',
+			   fontFamily: 'SpoqaHanSans',
+			   color:'#333',
+			   textOverflow: 'none'
+		   },
+		   useHTML:true,
+		   formatter:function(){
+			  return this.value.toString().replace('\n','<br/>')
+		   },
+	   },
+	},
+	yAxis: {
+		title:{text: null},
+		tickPositions: [0,200000,400000,600000,800000],
+		labels: {
+			 formatter: function () {return this.value;},
+			style: {
+			   fontSize: '12px',
+			   fontFamily: 'SpoqaHanSans',
+			   color:'#333'
+		   },
+		   useHTML:true,
+		   formatter:function(){
+			  return numberWithCommas(this.value.toString().replace('\n','<br/>'))
+		   }
+	   },
+	},
+	legend: {
+		enabled: false
+	},
+	plotOptions: {
+		series: {
+			borderWidth: 0,
+			dataLabels: {
+				enabled: false
+			}
+		}
+	},
+
+	series: [
+		{
+			name: "비용비교",
+			colorByPoint: true,
+			data: [
+				{
+					name: "선택 \n 클래스",
+					y: 500000
+				},
+				{
+					name: "일반 \n 클래스",
+					y: 700000
+				}
+			]
+		}
+	]
+
+});
+</script>
+
+
+</body>
+
+</html>
+

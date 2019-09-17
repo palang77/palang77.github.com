@@ -1,0 +1,845 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, target-densitydpi=medium-dpi, user-scalable=yes">
+<meta name="format-detection" content="telephone=no"/>
+<title></title>
+
+<link type="text/css" rel="stylesheet" href="../../common/css/base.css" />
+<link type="text/css" rel="stylesheet" href="../../common/css/common.css" />
+<link type="text/css" rel="stylesheet" href="../../common/css/product.css" />
+<script type="text/javascript" language="javascript" src="../../common/js/jquery-3.4.1.min.js"></script>
+<script type="text/javascript" language="javascript" src="../../common/js/ui.js"></script>
+
+<script>
+$(function(){
+    $(".info").on("click",function(){
+      $(this).next().slideToggle();
+      $(this).find(".arrow_down").toggleClass('up');
+      $(this).toggleClass('no_border')
+    });
+});
+
+$(function(){
+	//a href list - whole box
+	$(".risk_header_info").click(function(){window.open("http://naver.com");});
+	$(".invest01").click(function(){ window.open("http://naver.com"); });
+	$(".invest02").click(function(){ window.open("url"); });
+	$(".invest03").click(function(){ window.open("url"); });
+	$(".invest04").click(function(){ window.open("url"); });
+	$(".invest05").click(function(){ window.open("url"); });
+});
+</script>
+</head>
+<body>
+<!-- wrap --> 
+<div class="wrap risk risk01">  <!-- 위험등급 클래스 risk01 ~ risk06 까지 -->
+	<div class="header">
+		<div class="left"><a href="javascript:void(0);" class="close"><i class="ico ico_back_w"></i></a></div>
+		<div class="mark">투자성향<br>적합</div>
+	<!--  <div class="tit_wrapper pd_wrapper">
+			<h1 class="title">이용안내</h1>
+		</div> -->		
+	</div>
+	<!-- container -->
+	<div class="container">		
+		<!-- content -->
+		<div class="content">
+			<!-- 해당클래스 -->
+			<div class="product_detail_area product_desc_area">
+				<div class="risk_header">
+					<ul class="risk_nav">
+						<li>글로벌주식</li>
+						<li>매우높은위험</li>
+					</ul>
+					<p class="risk_title">삼성 J-REITs부동산투자신탁<br>제1호[REITs-재간접형]S</p>
+					<p class="risk_comment">연평균 4%대의 배당수익률이 기대되는 J-REIT 자산에 투자하는 것으로 안정적인 수익 확보 추구하는 펀드</p>
+				</div>				
+				<ul class="risk_header_info">
+					<li>기준가(2019.07.23)</li>
+					<li>
+						<ul class="fr">
+							<li>1,256.88원</li>
+							<li class="up">4.14 / 0.33%</li>  <!-- class="up" / class="down" 으로 지수 상승 하락 구분 -->
+						</ul>
+					</li>
+				</ul>
+				
+				<div class="pd_wrapper">
+					<div class="info_text">
+						<ul class="element">
+							<li class="tit">초대형급</li>
+							<li class="result"><span class="b">4,176</span><span>억</span></li>
+						</ul>
+						<ul class="element">
+							<li class="tit">유입액(1M)</li>
+							<li class="result"><span class="b">562.28</span><span>억</span></li>
+						</ul>
+						<ul class="element">
+							<li class="tit arrow"><a href="javascript:void(0);">총보수</a></li>
+							<li class="result"><span class="b">연 1.41</span><span>%</span></li>
+						</ul>
+					</div>
+
+				</div>
+				
+				<div class="box_line_type1">
+					<div class="line"></div>
+				</div>
+				
+				<div class="pd_wrapper">
+					<div class="chart_wrap">
+						<ul class="chart_title">
+							<li class="tit">수익률 및 운용규모</li>
+							<li class="sub arrow"><a href="javascript:void(0);">성과분석</a></li>
+						</ul>
+						<ul class="chart_nav">
+							<li><a href="javascript:void(0)"><span>1개월</span><span class="no">2.39%</span></a></li>
+							<li class="on"><a href="javascript:void(0)"><span>3개월</span><span class="no">2.39%</span></a></li>
+							<li><a href="javascript:void(0)"><span>6개월</span><span class="no">2.39%</span></a></li>
+							<li><a href="javascript:void(0)"><span>1년</span><span class="no">2.39%</span></a></li>
+							<li><a href="javascript:void(0)"><span>3년</span><span class="no">2.39%</span></a></li>
+						</ul>
+						<div id="chart"></div>
+					</div>
+					
+					<div class="chart_wrap">
+						<ul class="chart_title">
+							<li class="tit">자산구성</li>
+							<li class="sub">모닝스타(2019.04.01) 제공</li>
+						</ul>
+
+						<div id="pie"></div>
+					</div>
+					
+					<div class="chart_wrap">
+						<ul class="chart_title">
+							<li class="tit">투자지역</li>
+							<li class="sub">비중(%)</li>
+						</ul>
+
+						<div id="chart01"></div>
+					</div>
+					
+					<div class="chart_wrap">
+						<ul class="chart_title">
+							<li class="tit">주식 투자업종 TOP5</li>
+							<li class="sub">비중(%)</li>
+						</ul>
+
+						<div id="chart02"></div>
+					</div>
+
+					<div class="chart_wrap">
+						<ul class="chart_title">
+							<li class="tit">보유주식 TOP10</li>
+							<li class="sub">비중(%)</li>
+						</ul>
+						<!-------------------------------------------
+							2019-09-06 html수정
+							기존 : <div id="chart03"></div>
+						--------------------------------------------->	
+						<div id="chart03" class="chart03" style="height:450px;"></div>
+					</div>
+
+					<div class="chart_wrap">
+						<ul class="chart_title">
+							<li class="tit">결제일</li>
+							<li class="sub">영업일 기준</li>
+						</ul>
+						<div class="rbox_wrap">
+							<p class="tit"><span class="bold">투자 시</span><span>(17시 이전)</span></p>
+							<ul class="units_wrap">
+								<li>
+									<ul class="units">
+										<li class="circle"></li>
+										<li class="c_gray2">매수신청</li>
+										<li class="c_blue1">즉시</li>
+									</ul>
+								</li>
+								<li>
+									<ul class="units">
+										<li class="circle"></li>
+										<li class="c_gray2">기준가적용</li>
+										<li class="c_blue1">2일 후</li>
+									</ul>
+								</li>
+								<li>
+									<ul class="units">
+										<li class="circle"></li>
+										<li class="c_gray2">결제일</li>
+										<li class="c_blue1">2일 후</li>
+									</ul>
+								</li>
+							</ul>
+						</div>
+						<div class="rbox_wrap">
+							<p class="tit"><span class="bold">환매 시</span><span>(17시 이전)</span></p>
+							<ul class="units_wrap">
+								<li>
+									<ul class="units">
+										<li class="circle"></li>
+										<li class="c_gray2">환매신청</li>
+										<li class="c_blue1">즉시</li>
+									</ul>
+								</li>
+								<li>
+									<ul class="units">
+										<li class="circle"></li>
+										<li class="c_gray2">기준가적용</li>
+										<li class="c_blue1">2일 후</li>
+									</ul>
+								</li>
+								<li>
+									<ul class="units">
+										<li class="circle"></li>
+										<li class="c_gray2">결제일</li>
+										<li class="c_blue1">8일 후</li>
+									</ul>
+								</li>
+							</ul>
+						</div>
+						<div class="text_etc c_gray3 fs12">
+							주문시간에 의해 펀드의 기준가 적용일(결제일)이 다르므로 투자설명서(간이투자설명서) 등을 통해 확인바랍니다.
+						</div> 				
+					</div>
+
+				</div>
+				
+				<div class="box_line_type1">
+					<div class="line"></div>
+				</div>
+				
+				<div class="toggle_info">
+					<ul class="info">
+						<li>운용전략</li>
+						<li class="arrow_down"></li>
+					</ul>
+					<div class="detail paragraph type1">
+						<div class="tit_type3">
+							<b>가. 투자 전략</b>
+						</div>
+						<div class="text_box">이 투자신탁은 투자신탁 자산의 100% 이내에서 모투자신탁이 발행한 수익증권에 투자합니다. 모투자신탁에의 실질 투자비중은 시장상황에 따라 다소 변동될 수 있습니다.<br>
+							아래 모투자신탁의 주요 투자전략 등은 중요사항을 요역해서 기재한 것으로 자세한 모투자신탁의 투자전략 등에 대한 내용은 모투자신탁의 등록신청서를 반드시 참조하여 주시기 바랍니다. 모투자신탁은 자산총액의 60%이상을 주로 프랑스, 스위스, 영국, 독일, 이탈리아, 미국, 싱가포르, 중국, 홍콩, 한국 등의 증권거래소에 상장된 주식에 장기 투자합니다.
+ 						</div>
+						<div class="tit_type3">
+							<b>나. 모투자신탁의 주요투자전략 및 기본방침</b>
+						</div>
+						<div class="text">1) 주식운용전략</div>
+						<!-------------------------------------------
+							2019-09-06 html수정
+							아래 텍스트<div class="text_box"> 내부에
+							<div class="text_dot">태그 추가 수정있음.
+						--------------------------------------------->	
+						<div class="text_box">물질적 생산성을 높이고(혁신기업), 고(高)차원의 소비문화를 창출(고부가 소비재기업)며, 또 이를 세계화할 수 있는 영향력 있는 기업(세계화 가능기업)에 주로 투자<br>
+							<div class="text_dot">물질적 생산성 향상에 기여하는 혁신기업<br>
+								지속적인 기술개발을 통해 물질적 생산성을 극대화하는 기업<br>
+								새로운 비즈니스 모델을 통해 새로운 가치를 창출하는 기업
+							</div>
+							<div class="text_dot">고차원의 소비문화를 주도하는 고부가 소비재 기업<br>
+							 	단순 소비에서 벗어나 감성적 효용과 사회적 가치 등 고차원의 소비문화를 창출하는 기업<br>
+							 	높은 브랜드 인지도와 정통성을 바탕으로 소비문화의 변화를 주도하는 기업
+							</div>
+							<div class="text_dot">세계화 할 수 있는 경쟁력 있는 기업<br>
+								높은 브랜드 인지도나 글로벌 유통망을 바탕으로 세계적인 영향력을 발휘할 수 있는 기업
+							</div>
+						</div>
+						<div class="text">2) 국내·외 채권 및 유동성자산 등의 운용전략</div>
+						<div class="text_box">
+							① 투자신탁재산의 일부를 국채, 통안증권, 우량회사채 등 신용위험을 최소화할 수 있는 채권으로 구성하여 안정적인 수익을 추구합니다.<br>
+							② 주로 주식에 투자하되 금융시장 상황에 따라 채권, 파생상품, 수익증권, 기업어음, 유동성자산 등에 투자비율을 탄력적으로 조절하여 투자·운용합니다.
+						</div>
+						<div class="text">3) 환위험 관리전략</div>
+						<div class="text_box">
+							환헷지란 환율 변동으로 인한 외화표시 자산의 가치변동위험을 통화선물 또는 선물환계약을 활용하여 줄이는 것을 의미하며, 환헷지 비율은 펀드가 보유한 총 외화자산 대비 환헷지 규모를 비율로 표시한 것을 말합니다.<br>
+							이 펀드는 환율변동에 따른 기초자산의 손익 변동성을 최소화 하기 위해 투자전략에 맞추어 환헷지 수준을 탄력적으로 적용하고 있으며, 현재 미국(USD), 홍콩(HKD), 일본(JPY), 유럽(EUR), 스위스(CHF) 통화 등에 대하여 환헷지를 하고 있습니다.<br>
+							환헷지 비용은 1만 USD에 700원 수준이나, 매월 Roll over 하기 때문에 연간 헷지금액의 약 8.4Bps 내외로 수수료가 발생할 수 있습니다.<br>
+							비교지수 : [MSCI World Index X 90% ] + [ CALL*10%]
+						</div>
+					</div>
+					
+					<ul class="info">
+						<li>평가등급</li>
+						<li class="arrow_down"></li>
+					</ul>
+					<div class="detail">
+						<p><b>펀드평가사별 평가등급</b></p>
+						<div class="tbl type1 td_center tbl_border">
+							<table>
+								<caption>펀드평가사별 평가등급</caption>
+								<colgroup>
+									<col width="33%">
+									<col width="33%">
+									<col width="34%">
+								</colgroup>
+								<thead>
+									<tr>
+										<th>평가사</th>
+										<th>평가유형</th>
+										<th>평가등급</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>제로인</td>
+										<td>일반채권혼합</td>
+										<td>
+											<ul class="grade tg">
+												<li class="on"></li>
+												<li class="on"></li>
+												<li class="on"></li>
+												<li class="on"></li>
+												<li></li>
+											</ul>
+										</td>
+									</tr>
+									<tr>
+										<td>모닝스타</td>
+										<td>한국채권혼합</td>
+										<td>
+											<ul class="grade st bk">
+												<li class="on"></li>
+												<li class="on"></li>
+												<li class="on"></li>
+												<li class="on"></li>
+												<li></li>
+											</ul>										
+										</td>
+									</tr>
+									<tr>
+										<td>에프앤가이드</td>
+										<td>채권혼합</td>
+										<td>
+											<ul class="grade st pk">
+												<li class="on"></li>
+												<li class="on"></li>
+												<li class="on"></li>
+												<li class="on"></li>
+												<li></li>
+											</ul>										
+										</td>
+									</tr>
+									<tr>
+										<td>한국펀드평가</td>
+										<td>채권혼합</td>
+										<td>
+											<ul class="grade st yl">
+												<li class="on"></li> 
+												<li class="on"></li>
+												<li class="on"></li>
+												<li class="on"></li>
+												<li></li>
+											</ul>										
+										</td>
+
+									</tr>
+								</tbody>
+							</table>
+						</div>
+						<p class="arrow"><a href="javascript:void(0);">평가등급이란</a></p>
+					</div>
+					
+					<ul class="info">
+						<li>투자설명서</li>
+						<li class="arrow_down"></li>
+					</ul>
+					<div class="detail">
+						<ul class="invest invest01">
+							<li>집합투자규약</li>
+							<li class="view"></li>
+						</ul>
+						<ul class="invest invest02">
+							<li>투자설명서</li>
+							<li class="view"></li>
+						</ul>
+						<ul class="invest invest03">
+							<li>간이투자설명서</li>
+							<li class="view"></li>
+						</ul>
+						<ul class="invest invest04">
+							<li>운용보고서</li>
+							<li class="view"></li>
+						</ul>
+						<ul class="invest invest05">
+							<li>자산관리보고서</li>
+							<li class="view"></li>
+						</ul>
+					</div>
+					
+					<ul class="info">
+						<li>기타 및 유의사항</li>
+						<li class="arrow_down"></li>
+					</ul>
+					<div class="detail paragraph">
+						<div class="text_box">
+							<div class="text_dot">
+								온라인을 통한 금융투자상품의 매매는 회사의 권유 없이 고객님의 판단에 의해 이루어집니다. 해당 금융상품의 구조 및 위험도를 검토하고, 귀하의 투자경력이나 투
+								자성향에 적합한 상품인지 확인하시어 신중한 투자결정을 해 주시기 바랍니다.
+							</div>
+							<div class="text_dot">
+								가입하시기 전에 투자대상, 환매방법 및 보수 등에 관하여 투자설명서 또는 간이투자설명서를 반드시 읽어보시기 바랍니다.
+							</div>
+							<div class="text_dot">
+								상기 수익률은 세전 수익률로 표기되었으며, 과거의 운용실적이 미래의 수익률을 보장하는 것은 아닙니다.<br>
+								기간수익률 산출을 위한 기준일은 하루 전 영업일 기준가이며, 비영업일이 기준일이면 비영업일 전 영업일 기준가로 계산하여 산출하게 됩니다.
+							</div>
+							<div class="text_dot">
+								납입금액은 수정원금(이동평균 평균매입단가)으로 계산한 총입금액에서 순출금액(환매좌수 수정원금의 합)을 제한 액수이며 정확하지 않을 수 있습니다.
+							</div>
+							<div class="text_dot">
+								투자자가 부담하는 판매(후취)수수료 등을 감안하면 투자자의 투자금액 중 실제 집합투자증권을 매입하는 금액 또는 환매하여 실제 수령한 금액은 적어질 수 있습니다.
+							</div>
+						</div>
+					</div>
+				</div>								
+			</div>
+			
+			<!-- //  -->
+		</div>
+		<!-- // content -->
+	</div>	
+	<!-- // container -->	
+
+	<!-- footer -->
+	<div class="footer">
+		<!-- btn_area -->
+		<div class="btn_area">
+			<div class="btn_type1_box size37">
+				<a href="javascript:void(0);" class="btn_type1 btn1">관심상품</a>
+				<a href="javascript:void(0);" class="btn_type1 btn2">투자</a>
+			</div>
+		</div>
+		<!-- // btn_area -->
+	</div>	
+	<!-- // footer -->
+</div>
+<!-- // wrap -->
+
+
+<!-- highcharts -->
+<script src="../../common/js/highcharts/highcharts.js"></script>
+<!-- 수익률 및 운용규모 -->
+<script type="text/javascript">
+$(function () {
+//Highcharts.setOptions({
+//    
+//	});
+	
+$('#chart').highcharts({
+	chart: {
+		zoomType: 'xy'
+	},
+	title: {
+		text: null
+	},
+	subtitle: {
+		text: null
+	},
+	xAxis: [{
+		type: 'datetime' , 
+	    minorTickLength: 0,
+	    tickLength: 0,		   
+		labels: {enabled: false},
+	}],
+	yAxis: [{ // Primary yAxis
+		tickPositions: [0,200,400,600,800,1000,1200],
+		title: {
+	  		text: '',
+		}
+	}, { // Secondary yAxis
+	tickPositions: [0,2,4,6,8,10,12],
+		title: {
+	 		text: '',
+		},
+		opposite: true
+	}],
+	tooltip: {
+		pointFormat: ' {series.name}:{point.y}<br/>',  
+		shared: true,
+		shadow: false,
+		borderColor:'#eeeeee',
+		backgroundColor:'#ffffff',
+		xDateFormat: '<b>%Y.%m.%d</b>',
+		style: {
+		 	// fontSize:'12px',
+			// opacity:'0.7'
+		},   
+	},
+	
+	plotOptions: {
+		area: {
+			fillOpacity: 0.3,
+			lineWidth:0,   
+			pointStart: 0,
+			marker: {
+				enabled: false,
+				symbol: 'circle',
+				radius: 2,
+				states: {
+		  			hover: {enabled: true}
+	    		}
+			}
+		},
+		line: {
+			marker: {enabled: false,},
+		}
+	},
+	
+	legend: {
+		symbolRadius: 0,
+		borderWidth: 0,
+		symbolWidth:12,
+		},
+	series: [{
+		name: '순자산(억)',
+		type: 'area',
+		color: '#ccefff',
+		data: [700, 650, 700, 700, 550, 800, 850, 900, 950, 1000]
+		},
+	        {
+		name: '수익률(%)',
+		type: 'line',
+		color: '#5498ee',
+		yAxis: 1,
+		data: [4.2, 6, 1, 8, 7, 4, 3, 6, 5, 12]
+		}]
+	});
+});
+
+</script>
+
+<!-- 자산구성 -->
+<script type="text/javascript">
+$(function () {
+	$('#pie').highcharts({
+        chart: {
+            type: 'pie',
+            spacingTop: 0,
+            spacingBottom: 0,
+            spacingLeft: 0,
+            spacingRight: 0            
+        },
+        tooltip: {
+            pointFormat: '{name}: <b>{point.percentage:.1f}%</b>'
+        },
+        plotOptions: {
+            pie: {
+                slicedOffset:0,
+                cursor: 'pointer',
+                showInLegend:true,
+                colors: ['#8b93ed','#ba8bed','#ed8bbd','#f9b37f'],
+                dataLabels: {
+                    enabled: false,
+                    format: '<b>{point.name}</b>: {point.percentage:.1f} %'
+              	    }
+        	    }
+      		},
+        legend:{
+        	symbolWidth:12,
+        	borderWidth: 0,
+        	align:'right',
+        	verticalAlign:'top',
+            layout:'vertical',
+            itemMarginBottom:3, //line-height
+            x: -15,
+            y: 25 ,      
+            symbolRadius: 0,
+            itemStyle: {
+            	color: '#999',
+                fontWeight: 'bold',
+            },
+         	useHTML: true,
+          	labelFormatter: function() {
+            	return  '<span style="display:inline-block; width:44px;">'+ this.name + '</span>' + '<b style="color:#333">' +this.y + '%</b>';
+        	}
+        },
+
+        series: [{
+            colorByPoint: true,
+            innerSize: '45%',
+            
+            data: [
+              {name: '주식',  y: 61.41 },
+              {name: '채권',  y: 11.84},
+              {name: '유동성',  y: 10.85},
+              {name: '기타',  y: 4.67}
+          	]
+		}]
+    });
+});
+</script>
+
+<!--투자지역-->
+<script>
+$(function () { 
+	$('#chart01').highcharts({ 
+      chart: {
+          type: 'bar'
+      },
+      title: {
+          text:null
+      },
+
+      xAxis: {
+   	   tickLength: 10, // 왼쪽 눈금 길이  border length
+	   tickWidth: 1,   // border width
+    	  type: 'category',
+          labels: {
+          	useHTML: true,
+            style: {
+              	fontSize:12,
+              	color:'#333'
+            },
+          },
+      	},
+      yAxis: {
+    	  tickPositions: [0,25,50,75,100],
+          title: {
+              text: null
+          }
+      },
+      legend: {
+          enabled: false
+      },
+      plotOptions: {
+          series: {
+              pointWidth: 17,
+              borderWidth: 0,
+              dataLabels: {
+                  enabled: false
+              }
+          }
+      },
+      tooltip: {
+          headerFormat: '<span style="font-size:11px">{series.name}</span><br>',
+          pointFormat: '<span style="color:{point.color}">{point.name}</span>: <b>{point.y:f}</b><br>'
+      },
+
+      series: [{
+      	name: "투자지역",
+        colorByPoint: true,
+        data: [
+        	  {
+	            name: "미국",
+	            y: 85,
+	            color:'#8b93ed'
+            },
+            {
+	            name: "네덜란드",
+	            y: 25,
+	            color:'#ba8bed'
+            },
+            {
+	            name: "캐나다",
+	            y: 20,
+	            color:'#ed8bbd'
+            },
+            {
+                name: "스위스",
+                y: 15,
+                color:'#f9b37f'
+            },
+            {
+	            name: "포르투칼",
+	            y: 10,
+	            color:'#ffe052'
+                  }
+              ]
+          }
+       ]
+  });
+});
+</script>
+
+<!-- 주식  투자업종 TOP5 -->
+<script>
+$(function () { 
+	$('#chart02').highcharts({ 
+      chart: {
+          type: 'bar'
+      },
+      title: {
+          text: null
+      },
+      xAxis: {
+      	  tickLength: 10,
+    	  tickWidth: 1,    	  
+          categories: ['2019.01.02', '2019.04.01'],
+          labels: {
+          	useHTML: true,
+            style: {
+              fontSize:12,
+              color:'#333'
+            },
+          }
+      },
+      yAxis: {
+    	  tickPositions: [0,25,50,75,100],
+          title: {
+              text: null
+          },
+          labels: {
+          	useHTML: true,
+            style: {
+              fontSize:12,
+              color:'#999'
+            },
+          }
+      },
+      legend: {
+    	  borderWidth: 0,
+    	  reversed: true,
+          symbolRadius: 0,
+          symbolWidth: 12,
+          symbolHeight: 8,
+         // itemDistance: 5,
+          itemStyle: {
+             fontSize:'12px',
+             color: '#999'
+          },
+      },
+      plotOptions: {
+          series: {
+              stacking: 'normal',
+              pointWidth: 17,
+          }
+      },
+      series: [{
+          name: '방어소비재',
+          data: [20, 10],
+          color:'#ffe052'
+      },{
+          name: '금융',
+          data: [20, 15],
+          color:'#f9b37f'
+      },{
+          name: '헬스케어',
+          data: [25, 30],
+          color:'#ed8bbd'
+      }, {
+          name: '정보기술',
+          data: [25, 20],
+          color:'#ba8bed'
+      }, {
+          name: '순환소비재',
+          data: [25, 23],
+          color:'#8b93ed'
+      }]
+  });
+});
+</script>
+
+<!--보유주식 TOP 10-->
+<script>
+$(function () { 
+	$('#chart03').highcharts({ 
+      chart: {
+          type: 'bar',
+          inverted: 'true'
+      },
+      title: {
+          text:null
+      },
+      xAxis: {
+      	  tickLength: 10,
+    	  tickWidth: 1,    	  
+          type: 'category',
+          labels: {
+		  	useHTML: true,
+            style: {
+            	width: 130,
+              	textOverflow: 'ellipsis',
+              	fontSize:12,
+              	color:'#333'
+            },
+          }
+      },
+      yAxis: {
+      	  tickPositions: [0,1,2,3,4],
+          title: {
+              text: null
+          }
+      },
+      legend: {
+          enabled: false
+      },
+      plotOptions: {
+          series: {
+              pointWidth: 17,
+              pointPadding: 0.5,
+              borderWidth: 0,
+              dataLabels: {
+                  enabled: false
+              }
+          }
+      },
+      tooltip: {
+	      useHTML: true,
+	      headerFormat: '<span style="font-size:11px">{series.name}</span><br>',
+	      pointFormat: '<span style="color:{point.color}">{point.name}</span>: <b>{point.y:.1f}</b><br/>'
+      },
+      series: [{
+	      name: "보유주식",
+	      colorByPoint: true,
+	      data: [
+	          {
+	              name: "LVMH Moet Hennessy LVMH Moet Hennessy",
+	              y: 3.3,
+	              color:'#8b93ed'
+	          },
+	          {
+	              name: "L'Oreal SA",
+	              y: 3.1,
+	              color:'#ba8bed'
+	          },
+	          {
+	              name: "Alphabet Inc",
+	              y: 3.1,
+	              color:'#ed8bbd'
+	          },
+	          {
+	              name: "Merck & Co Inc",
+	              y: 2.8,
+	              color:'#f9b37f'
+	          },
+	          {
+	              name: "Facebook Inc A",
+	              y: 2.5,
+	              color:'#ffe052'
+	          },
+	          {
+	              name: "JPMorgan Chase & Co",
+	              y: 2.2,
+	              color:'#cfef50'
+	          },
+	          {
+	              name: "Hermes International Hermes International",
+	              y: 2,
+	              color:'#75e172'
+	          },
+	          {
+	              name: "Kering SA",
+	              y: 1.9,
+	              color:'#48cbc0'
+	          },
+	          {
+	              name: "Microsoft Corp",
+	              y: 1.7,
+	              color:'#67cbff'
+	          },
+	          {
+	              name: "Amazon.com Inc",
+	              y: 1.4,
+	              color:'#5091ee'
+	          }
+          ]
+      }]
+  });
+});
+</script>
+
+</body>
+
+</html>
