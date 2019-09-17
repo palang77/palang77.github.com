@@ -1,0 +1,126 @@
+@charset "utf-8";
+
+/*투자성향안내*/
+.t_invest_tendency {line-height:1.5em; padding-top:15px;}
+.t_invest_tendency th, .t_invest_tendency td{vertical-align:top;}
+.t_invest_tendency td{padding:0 0 30px 15px;}
+.t_invest_tendency .ico_invest {width:70px; height:70px; border-radius:100px; line-height:65px;}
+.ico_invest01{background-color:#edf5fe;}
+.ico_invest02{background-color:#e6fafb;}
+.ico_invest03{background-color:#fffce8;}
+.ico_invest04{background-color:#fff3ec;}
+.ico_invest05{background-color:#fdeef1;}
+.ico_invest01  .ico{background-image:url(../../images/myInfo/ic_invest01.png); width:22px; height:24px;}
+.ico_invest02  .ico{background-image:url(../../images/myInfo/ic_invest02.png); width:28px; height:29px;}
+.ico_invest03  .ico{background-image:url(../../images/myInfo/ic_invest03.png); width:26px; height:24px;}
+.ico_invest04  .ico{background-image:url(../../images/myInfo/ic_invest04.png); width:25px; height:19px;}
+.ico_invest05  .ico{background-image:url(../../images/myInfo/ic_invest05.png); width:22px; height:20px;}
+.t_invest_tendency .tit_type3{margin-bottom:6px;}
+
+/*투자성향분석*/
+.tendency_analysis_step1{text-align:center; padding-top:83px;}
+.tendency_analysis_step1 .img_invest_result{display:inline-block; width:177px; height:116px; background:url(../../images/myInfo/img_invest_result.png) no-repeat; background-size:100%; margin-bottom:44px;}
+.tendency_analysis_step1 .tit_type1{margin-bottom:10px;}
+.tendency_analysis_step1 .txt span{vertical-align:baseline;}
+.tendency_analysis_step1 .gray_box{background-color:#f7f7f7; padding:15px 20px; border-radius:6px; line-height: 1.5em; font-size:12px; color:#666; margin-top:10px;}
+.tendency_analysis_step2{padding-top:12px;}
+.tendency_analysis_step2 .blue_box{margin-top:25px;}
+.tendency_analysis_step .tendency_analysis_age{text-align:right; color:#666;}
+.tendency_analysis_step .blue_box{padding:25px 90px 25px 30px;  background:url(../../images/myInfo/ic_servey_only.png)  rgba(31,93,190,.1) no-repeat right 30px top 30px; background-size:30px;}
+.tendency_analysis_step .tendency_analysis_text{font-size:18px; color:#333; margin-top:3px; line-height:1.44;}
+.tendency_analysis_step .tendency_analysis_text span{vertical-align:baseline;}
+.tendency_analysis_form{padding-top:45px;}
+.tendency_analysis_form .input_form{padding-bottom:30px;}
+.tendency_analysis_form .inp_radio, .tendency_analysis_form .inp_chk{width:100%;}
+.tendency_analysis_form .txt{white-space:normal; width:95%; vertical-align:top; color:#666; line-height:1.5em; padding-right:20px;}
+.tendency_analysis_form .txt > small {display:block; font-size:12px; margin-top:5px;line-height:1.4em;}
+
+
+/*투자서향 분석결과*/
+.tendency_analysis_result_title{text-align:center; padding-top:15px; padding-bottom:30px;}
+.tendency_analysis_result_title .text{margin-top:10px;}
+.tendency_analysis_result_title .text span{vertical-align:baseline;}
+.tendency_analysis_result_info{margin-top:10px;}
+.tendency_analysis_result_info .text_dot{margin-top:7px; line-height:1.5em;}
+.result_date{text-align:center; padding-top:16px; padding-bottom:41px; font-size: 11px;}
+
+.tendency_analysis_result_img{display:flex; border-bottom:2px solid #eee;}
+.tendency_analysis_result_img .result_ico{width:25%; position:relative; height:114px;}
+.tendency_analysis_result_img .result_ico .ico_invest{width:45px; height:45px; border-radius:100px; position:absolute; bottom:10px; left:50%; margin-left:-22.4px; text-align:center; }
+.tendency_analysis_result_img .ico_invest i{display:none;}
+.tendency_analysis_result_img .ico_invest p{font-size:11px; color:#666; padding-top:16px;}
+.tendency_analysis_result_img .ico_invest p > span{display:block; margin-top:-7px;}
+.tendency_analysis_result_img .result_ico:after{content:""; display:inline-block; width:11px; height:11px; background-color:#eee;  border-radius:100px; position:absolute; bottom:-6px; left:50%; margin-left:-5.5px;}
+
+.tendency_analysis_result_img .result_ico.on:after{width:13px; height:13px; margin-left:-6.5px; background-color:#fff;}
+.tendency_analysis_result_img .invest_result01.on:after{border:3px solid #5498ee;}
+.tendency_analysis_result_img .invest_result02.on:after{border:3px solid #52dbe5;}
+.tendency_analysis_result_img .invest_result03.on:after{border:3px solid #f8e26e;}
+.tendency_analysis_result_img .invest_result04.on:after{border:3px solid #ffbe5b;}
+.tendency_analysis_result_img .invest_result05.on:after{border:3px solid #e45a74;}
+
+.tendency_analysis_result_img .result_ico.on .ico_invest{width:80px; height:96px; margin-left:-40px; transform: scale(0); background:transparent;  animation: myInfo-result ease-out .5s ; transform-origin:bottom; animation-delay:1s;-webkit-animation-delay:1s;-webkit-animation-fill-mode: forwards;}
+.tendency_analysis_result_img .invest_result01.on .ico_invest{background:url(../../images/myInfo/in_color01.png) no-repeat top center; background-size:100%; padding-top:17px;}
+.tendency_analysis_result_img .invest_result02.on .ico_invest{background:url(../../images/myInfo/in_color02.png) no-repeat top center; background-size:100%; padding-top:15px;}
+.tendency_analysis_result_img .invest_result03.on .ico_invest{background:url(../../images/myInfo/in_color03.png) no-repeat top center; background-size:100%; padding-top:17px;}
+.tendency_analysis_result_img .invest_result04.on .ico_invest{background:url(../../images/myInfo/in_color04.png) no-repeat top center; background-size:100%; padding-top:21px;}
+.tendency_analysis_result_img .invest_result05.on .ico_invest{background:url(../../images/myInfo/in_color05.png) no-repeat top center; background-size:100%; padding-top:19px;}
+.tendency_analysis_result_img .result_ico.on .ico_invest i{display:inline-block;}
+.tendency_analysis_result_img .result_ico.on .ico_invest p{padding-top:5px; color:#333;}
+.tendency_analysis_result_img .result_ico.on .ico_invest p > span{display:inline-block; vertical-align:baseline; margin-top:0;}
+@keyframes myInfo-result {
+    0% {
+        transform: scale(0);
+    }  
+   100% {
+       transform: scale(1);
+   }
+}
+
+.header .right2{position:absolute;top:23px;right:20px;font-size:16px}
+.coupon_area.coupon_list_area{min-height:100%;display:flex;padding-bottom:0 !important;flex-direction:column;}
+.coupon_list_area .coupon_possible .current_coupon{display:table;width:100%;}
+.coupon_list_area .coupon_possible .current_coupon > *{display:table-cell;height:40px;vertical-align: middle;}
+.coupon_list_area .coupon_possible .current_coupon > .num{text-align: right;}
+.coupon_list_area .coupon_possible .current_coupon .label_txt{font-size:14px;color: #333;}
+.coupon_list_area .coupon_possible .current_coupon .num{font-size:14px;color: #333;}
+.coupon_list_area .coupon_possible .current_coupon .num b{margin-right:4px;font-size:28px;color: #1f5dbe;}
+
+.coupon_list_area .coupon_possible .coupon_end{display:table;width:100%;margin-top:10px;background:#f7f7f7;border-radius:5px;}
+.coupon_list_area .coupon_possible .coupon_end > *{display:table-cell;height:36px;padding:0 10px;vertical-align: middle;font-size:12px;color: #999;}
+.coupon_list_area .coupon_possible .coupon_end > .num{text-align: right;font-size:12px;color: #999;font-weight:bold;}
+
+.coupon_list_area .coupon_list_wrap{flex:1;margin-top:15px;background-color:#f7f7f7;padding:16px 20px 50px;}
+.coupon_list_area .coupon_list_wrap .no_data_box{margin-top:100px}
+.coupon_list_area .coupon_list_wrap .coupon_type_list{text-align:right;}
+.coupon_list_area .coupon_list_wrap .coupon_type_list ul{display:inline-block;}
+.coupon_list_area .coupon_list_wrap .coupon_type_list ul li{margin-left:20px;float:left;}
+.coupon_list_area .coupon_list_wrap .coupon_type_list ul li a{font-size:12px;color:#ccc;}
+.coupon_list_area .coupon_list_wrap .coupon_type_list ul li a.active{color:#333;}
+.coupon_list_area .coupon_list_wrap .coupon_list dl:first-child{margin-top:16px;}
+.coupon_list_area .coupon_list_wrap .coupon_list dl{display:block;width:320px;height:136px;background:url('../../images/myInfo/ico_coupon_img.png') no-repeat;background-size:cover;padding:15px 20px;margin:10px auto 0;position:relative;}
+.coupon_list_area .coupon_list_wrap .coupon_list dl .won{font-size:24px;margin:12px 0;font-weight:bold;}
+.coupon_list_area .coupon_list_wrap .coupon_list dl .end_date{position:absolute;right:20px;top:51px;color:#fff;}
+.coupon_list_area .coupon_list_wrap .coupon_list dl .end_date .t_right{display:block;text-align:right;}
+.coupon_list_area .coupon_list_wrap .coupon_list dl dd{font-size:12px;}
+
+
+/*투자헝향정보 미제공*/
+.investinfo_noinfo_top{text-align:center; line-height:1.5em;}
+.investinfo_noinfo_top .tit_type1{margin-bottom:10px;}
+.img_investinfo_noinfo{width:100px; height:100px; background:url(../../images/myInfo/img_nodata.png) no-repeat; background-size:100%; margin:32px auto;}
+.investinfo_noinfo_bt{line-height:1.5em;}
+.investinfo_noinfo_bt .gray_box{background-color:#f7f7f7; padding:15px 20px; font-size:12px; margin-top:10px;}
+
+
+
+
+
+
+
+
+
+
+
+
+

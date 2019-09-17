@@ -1,0 +1,222 @@
+@charset "utf-8";
+
+/* 인트로 */
+.intro_menu_area{padding-bottom:0 !important;}
+.intro_menu_area .customer_center_box2{padding-right:10px;}
+.customer_intro_menu{margin-top:35px;}
+.customer_intro_menu dl {}
+.customer_intro_menu dl dt {height:30px;line-height:30px;padding:0 10px;font-size:12px;color: #666666;background:#f4f4f4;}
+.customer_intro_menu dl dd {}
+.customer_intro_menu dl dd ul {padding-bottom:20px;}
+.customer_intro_menu dl dd ul li {border-top:1px solid #f0f0f0;}
+.customer_intro_menu dl dd ul li a {position:relative;display:block;min-height:52px;padding:18px 25px 18px 10px;font-size:16px;color: #333;}
+.customer_intro_menu dl dd ul li a .arr {display:inline-block;position:absolute;top:50%;right:20px;width:8px;height:11px;margin-top:-3px;}
+.customer_intro_menu dl dd ul li a .arr:before{content:'';display:block;position:absolute;top:0;left:0;width :0;height:0;border-top:6px solid transparent;border-bottom:6px solid transparent;border-left:5px solid #999999;}
+.customer_intro_menu dl dd ul li a .arr:after{content:'';display:block;position:absolute;top:0;left:-1px;width :0;height:0;border-top:6px solid transparent;border-bottom:6px solid transparent;border-left:5px solid #fff;}    
+
+/*  자주찾는 질문 */
+.faqlist_wrap{display:flex;flex-direction:column;height:100%;}
+.faq_aera{padding-bottom:0 !important;height:100%;}
+.faq_aera .faq_search{margin:15px 0 25px 0;}
+.faq_aera .faq_list{display:flex;flex:1;background:#f7f7f7;}
+.faq_aera .faq_list .no_data_box{flex:1;background:#fff;display:flex;flex-direction: column;justify-content:center;align-items:center;}
+
+.faq_list ul{}
+.faq_list ul li{border-bottom:1px solid #f0f0f0;}
+.faq_list ul li a{position:relative;display:block;padding:17px 15px 17px 25px;}
+.faq_list ul li a .arr {display:inline-block;position:absolute;top:50%;right:0;width:8px;height:11px;margin-top:-3px;}
+.faq_list ul li a .arr:before{content:'';display:block;position:absolute;top:0;left:0;width :0;height:0;border-top:6px solid transparent;border-bottom:6px solid transparent;border-left:5px solid #aaaaaa;}
+.faq_list ul li a .arr:after{content:'';display:block;position:absolute;top:0;left:-1px;width :0;height:0;border-top:6px solid transparent;border-bottom:6px solid transparent;border-left:5px solid #f7f7f7;}    
+.faq_list ul li a .ico{position:absolute;top:17px;left:0;}
+.faq_list ul li a .ico{margin-right:5px;}
+.faq_list ul li a .txt{font-size:16px;color: #333;}
+
+.faq_detail{}
+.faq_detail .ico{position:absolute;left:0;}
+.faq_detail .question{position:relative;padding-bottom:20px;padding-left:20px;font-size:16px;line-height:1.5em;}
+.faq_detail .question .ico{top:2px;}
+.faq_detail .question .category{margin-top:10px;}
+.faq_detail .question .category span{display:inline-block;height:20px;line-height:18px;padding:0 10px;border-radius:20px;border:1px solid #eeeeee;color: #666666;font-size:12px;}
+.faq_detail .answer{position:relative;padding:20px 0;padding-left:20px;font-size:14px;border-top:1px solid #f0f0f0;line-height:1.7em;}
+.faq_detail .answer .ico{top:23px;}
+
+/* 1:1 문의 */
+.man_to_man_aera{height:100%;padding-bottom:0 !important;}
+.man_to_man_wrap{height:100%;}
+.man_to_man_wrap .no_data_box{display:flex;flex-direction:column;height:100%;}
+.man_to_man_wrap .no_data_box .no_data{flex:1;display:flex;flex-direction: column;justify-content:center;align-items:center;}
+.man_to_man_wrap .total_num {font-size:12px;color: #999999;}
+.man_to_man_wrap .total_num b{vertical-align: baseline;color: #1f5dbe;}
+.man_to_man_wrap .category span{display:inline-block;height:20px;line-height:18px;padding:0 10px;border-radius:20px;border:1px solid #eeeeee;color: #666666;font-size:12px;}
+.man_to_man_wrap .sub_info_text {margin-top:10px;}
+
+.man_to_man_list ul {margin-top:10px;border-top:1px solid #333;border-bottom:1px solid #ccc;}
+.man_to_man_list ul li {border-top:1px solid #eee;}
+.man_to_man_list ul li:first-child{border-top:none;}
+.man_to_man_list ul li .cellbox .cell{padding:15px 20px;vertical-align:top;}
+.man_to_man_list ul li .cellbox .cell:first-child{padding-left:0;}
+.man_to_man_list ul li .cellbox .cell:last-child{padding-right:0;}
+.man_to_man_list ul li .cellbox .cell.cont {width:auto;}
+.man_to_man_list ul li .cellbox .cell.cont .text {font-size:14px;color: #333;white-space: normal;}
+.man_to_man_list ul li .cellbox .cell.cont .text a{display:block;overflow:hidden;text-overflow:ellipsis;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;word-wrap:break-word;line-height:1.4em;height:2.8em;}
+.man_to_man_list ul li .cellbox .cell.cont .category {margin-top:10px;}
+.man_to_man_list ul li .cellbox .cell.status .ing {font-size:12px;color: #999;}
+.man_to_man_list ul li .cellbox .cell.status .end {font-size:12px;color: #1f5dbe;}
+
+.man_to_man_detail{border-bottom:1px solid #ccc;}
+.man_to_man_detail .question {padding:15px 0;border-top:1px solid #333;}
+.man_to_man_detail .question .topinfo:after{content:'';display:block;clear: both;}
+.man_to_man_detail .question .topinfo .date {float:left;font-size:12px;color: #999;}
+.man_to_man_detail .question .topinfo .status{float:right;}
+.man_to_man_detail .question .topinfo .status.ing {font-size:12px;color: #999;}
+.man_to_man_detail .question .topinfo .status.end {font-size:12px;color: #1f5dbe;}
+.man_to_man_detail .question .text {margin-top:5px;font-size:14px;color: #333;line-height:1.5em;}
+.man_to_man_detail .question .category {margin-top:10px;}
+.man_to_man_detail .answer {position:relative;padding:15px 0 15px 20px;border-top:1px solid #eee;}
+.man_to_man_detail .answer .ico{position:absolute;top:15px;left:0;}
+.man_to_man_detail .answer .text {line-height:1.5em;}
+.man_to_man_detail .answer .text strong {display:block;font-size:14px;color: #1f5dbe;font-weight:normal;}
+.man_to_man_detail .answer .text .txt {margin-top:10px;font-size:14px;color: #333;}
+.man_to_man_detail .answer .text .date {margin-top:10px;font-size:12px;color: #999999;line-height:1em;}
+
+.man_to_man_write{}
+.man_to_man_write .user_info {}
+.man_to_man_write .user_info .cellbox {}
+.man_to_man_write .user_info .cellbox .cell{padding-top:14px;}
+.man_to_man_write .user_info .cellbox .row:first-child .cell{padding-top:0;}
+.man_to_man_write .user_info .cellbox .cell.label {font-size:14px;color: #999;}
+.man_to_man_write .user_info .cellbox .cell.info {width:auto;font-size:14px;color: #1f5dbe;text-align: right;}
+.man_to_man_write .noti_txt {padding:15px 20px;margin-top:20px;background:#f7f7f7;font-size:14px;color: #333;border-radius:3px;line-height:1.5em;background:#f7f7f7;}
+.man_to_man_write .noti_txt span{vertical-align: baseline;}
+.man_to_man_write .question_select {margin-top:20px;}
+.man_to_man_write .question_input {margin-top:15px;}
+.man_to_man_write .question_input textarea {height:280px;padding:10px 12px;border: 1px solid #dddddd;width:100%;}
+
+/* 약관 설명서 */
+.terms_manual_area{height:100%;padding-bottom:0 !important;}
+.terms_manual_wrap{display: flex;flex-direction: column;height: 100%;}
+.terms_manual_wrap{display: flex;flex-direction: column;height: 100%;}
+.terms_manual_view{flex:1px;min-height:500px;margin-top:10px;background:#f7f7f7;}
+
+/*업무시간*/
+.task_time_area .tit_type2{margin-bottom:16px;}
+.task_time_area .tbl ~ .tit_type2{margin-top:20px;}
+
+/*입출금방법*/
+.task_guide_area .tab_menu ~ .pd_wrapper{margin-top:25px;}
+.inout_method_area .tit_type2 + .tit_type3{margin-top:15px;}
+.inout_method_bank:after{content:""; display:block; clear:both;}
+.inout_method_bank li{float:left; width:calc(33.3333% - 3.33333px); margin-right:5px; overflow:hidden; text-align:center; text-align:center;}
+/*.inout_method_bank li img{border:1px solid #f4f4f4; border-radius:5px;}*/
+.inout_method_bank li:nth-child(3n){margin-right:0;}
+.inout_method_bank  + .tit_type2{margin-top:25px;}
+
+/*예탁금이용료율*/
+.deposit_usingrate_box{padding:24px 0 23px; text-align:center; background-color:#f7f7f7; margin-top:20px;}
+.deposit_usingrate_box .big_text{font-size:16px; margin-top:3px; margin-bottom:5px; line-height:32px;}
+.deposit_usingrate_box .big_text b{font-size:20px;}
+.ico_tax{width:120px; height:60px; background:url(../../images/customer/ico_tax.png)}
+.paragraph_deposit_usingrate .tit_type3{margin-top:18px;}
+.paragraph_deposit_usingrate .tit_type3:first-child{margin-top:20px;}
+.paragraph_deposit_usingrate .text_dash{margin-top:5px;}
+
+
+/*하모니서비스*/
+.harmony_service_area .text{line-height:1.5;}
+.harmony_service_top{background-color:#f7f7f7; padding:0 20px; display:table; width:100%;}
+.harmony_service_area .tbl.type1{margin-top:20px;}
+.ico_harmony_wrap{display:table-cell; padding:0 20px; vertical-align:middle; width:90px;}
+.ico_harmony{display:inline-block; width:50px; height:50px; background: url("../../images/customer/ico_harmony.png") no-repeat center; background-size:50px;}
+.text_harmony{display:table-cell; padding:28px 0; vertical-align:middle; font-size:16px; line-height: 1.31;}
+.harmony_service_info{background-color:#f7f7f7; padding:15px; margin-top:10px; line-height:1.5;}
+.harmony_service_info .tit_type4{margin-top:15px;}
+.harmony_service_info > *:first-child{margin-top:0!important;}
+.harmony_service_info .text{margin-top:5px;}
+.harmony_service_info .text_dot{margin-left:14px;}
+.harmony_amount{padding:25px 14px 10px; display:table; width:100%;}
+.harmony_amount > div{display:table-cell;  text-align:center; width:calc(33.333333% - 14.6666px); vertical-align:top;}
+.harmony_amount > div.sign{width:22px; vertical-align:middle;}
+.harmony_amount > div.sign span{display:inline-block; margin-top:-33px; font-size:20px; color:#1f5dbe;}
+.harmony_amount > div p{margin-top:5px;}
+
+
+
+
+/* 이용안내 - 계좌개설안내 */
+.new_infoimg {background: url('../../images/customer/co_img_fossbn_only.png') no-repeat; margin-left: -20px; width: calc(100% + 40px); background-size:contain; position: relative;}
+.new_infoimg img {opacity: 0; width: calc(100% + 40px);}
+.new_infoimg p {font-size: 19px; color:#fff; position: absolute; top: 50%; transform: translateY(-50%); text-align: right; right: 25px; }
+.new_customer_area .text {margin: 10px 0 35px;}
+
+.account_open_area .gray {margin-left: -20px; width: calc(100% + 40px); height: auto; background: #f7f7f7; padding: 20px;}
+.account_open_area .gray p {font-size: 16px; line-height: 24px; display: flex; align-items: center; justify-content: center;}
+.account_open_area .gray p:before {display: inline-block; content:""; background: url("../../images/customer/co_ic_fosshand_gr_only.png") no-repeat center; background-size:contain; width: 55px; height: 55px; margin:33px 18px 33px 0; flex:none;}
+
+.account_open_area .inout_method_bank {margin-top:25px;}
+.account_open_area .inout_method_bank ~ .account_open_info .tit:first-child {margin-top: 25px !important;}
+.account_open_info > .tit {margin-top: 35px; font-size: 16px; font-weight: 700;}
+.account_open_info .step_wrap {margin-top: 20px;}
+.account_open_info > .text_dot {font-size: 12px; color:#999; margin-top: 10px;}
+.account_open_info > .tbl.type1 {margin-top:15px; }
+.account_open_info .dot_wrap {margin-top:20px;}
+.account_open_info .dot_wrap .text_dot + .text_dot {margin-top: 7px;}
+.account_open_info .round_box {font-size: 12px; color:#666; padding: 15px; border-radius: 6px; background: #f7f7f7; margin-top: 10px; line-height: 18px;}
+
+.account_open_info .tbl.type1 td .text {margin-top: 5px !important; line-height: 18px;}
+.account_open_info .text_dash {margin-top: 5px;}
+.account_open_info .tab_menu2 {margin-top: 15px;}
+
+
+
+/*시뮬레이션*/
+.simulation .header{position:absolute;  width:100%; z-index:30;}
+.simulation .header.fix{position:fixed;}
+.simulation .header_simulation{background-color:transparent;}
+.simulation .header_simulation.fix{background-color:#1f5dbe;}
+.simulation .header_simulation .title{color:#fff;}
+.simulation .header_simulation .back i{background:url(../../images/com/ico_back_w.png) no-repeat; }
+.simulation .simulation_top{position:relative; background-size:100% !important; background-position:right top; padding-bottom:20px; background-repeat:no-repeat !important;}
+.simulation01 .simulation_top{background:url(../../images/customer/bg_simulation01.png) #1f5dbe; padding-top:144px;}
+.simulation02 .simulation_top{background:url(../../images/customer/bg_simulation02.png) #1f5dbe; padding-top:144px;}
+.simulation03 .simulation_top{background:url(../../images/customer/bg_simulation03.png) #1f5dbe; padding-top:121px;}
+.simulation_top.bg_blue{background:#1f5dbe;}
+
+.simulation_top .box{background:rgba(138,204,255,0.08); border-radius:6px; padding:15px 20px; color:#fff; line-height:1.5em; }
+.simulation_top .box .txt{opacity:0.85;}
+.simulation_top_text {padding-bottom:25px; color:#fff; font-size:16px;}
+.simulation_top_text p{font-size: 24px; }
+.simulation_cellbox{padding:20px 0 ; color:#666;}
+.simulation_cellbox > div {min-height:56px; padding-left:71px; }
+.simulation_cellbox > div span{vertical-align:baseline;}
+.simulation01 .simulation_cellbox > div{background:url(../../images/customer/ico_balance.png) no-repeat left top;  background-size:56px;}
+.simulation02 .simulation_cellbox > div{background:url(../../images/customer/ico_money.png) no-repeat left top;  background-size:56px;} 
+.simulation03 .simulation_cellbox > div{background:url(../../images/customer/ico_balance.png) no-repeat left top;  background-size:56px;}
+.simulation_graph .highcharts-credits{display:none;}
+
+.other_class_compare_table .tbl.type1 table tbody td{padding: 10px 5px;}
+.other_class_compare_table .class_name{height:89px !important;}
+.other_class_compare_table .no_data{padding:15px 10px;font-size:14px;border-top:1px solid #333;border-bottom:1px solid #ccc;text-align:left;background:#fafafa;}
+
+
+/*투자비용비교*/
+.invest_cost_gray{padding:33px 10px 24px; background-color:#f7f7f7; margin:20px 0; text-align:center; line-height:1.5em;}
+.invest_cost_gray > span{vertical-align:baseline;}
+.invest_cost_gray .ico_invest_cost{margin-bottom:10px;}
+.invest_cost_gray .ico_invest_cost i{width:120px; height:60px; background:url(../../images/customer/ico_sclass.png) no-repeat;}
+.invest_cost_form .fw_normal{font-weight:normal; vertical-align:baseline;}
+.invest_cost_form .select_type1 .design{font-size:16px;}
+.invest_cost_form .input_box .tit_type3{color:#333;}
+.invest_cost_form .inp_radio2_box{padding-top:3px;}
+.invest_fund_list{background-color:#f7f7f7; border-radius:6px; padding:5px 20px 0; margin-top:15px;}
+.invest_fund_list li{padding:15px 0; border-bottom:1px solid #f0f0f0;}
+.invest_fund_list li:last-child{border-bottom:none;}
+.invest_fund_list .inp_radio{width:100%;}
+.invest_fund_list a{width:90%; white-space:normal; line-height: 1.5em; vertical-align:top;}
+.invest_fund_info{padding-top:10px; padding-bottom:20px; border-top:1px solid #f0f0f0;}
+.invest_fund_info > p{text-align:right; margin-bottom:10px; font-size:12px; color:#999;}
+.invest_fund_info .text_etc{ font-size:12px; color:#999;  line-height:1.5em;}
+.invest_cost_law{text-align:center; padding:20px 0; line-height: 1.42em;}
+.invest_cost_form .input_box + .btn_type2_box{margin-top:15px; padding-bottom:5px;}
+
+/* 펀드찾기 */
+.fund_selc_wrap .no_data_box{margin-top:100px;}

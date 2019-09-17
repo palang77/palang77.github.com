@@ -1,0 +1,58 @@
+@charset "utf-8";
+
+.transfer_area .myasset_top{padding-bottom:30px;}
+.transfer_area .input_account {margin-top:40px;padding-bottom:30px;}
+.transfer_area .site_rule {padding:30px 0;}
+.transfer_area .transfer_info {padding:30px 0;}
+
+/*메인 > 일반계좌정보*/
+.slider_normal_invest_area .tit_type1{text-align:center; padding-bottom:15px; margin-top:40px;}
+.slider_normal_invest_area .pagination_case_invest_area{bottom:inherit !important; top:0; width:100%; text-align:center; z-index:1000;}
+.pagination_case_invest_area .swiper-pagination-bullet{opacity:1 !important; background-color:#ccc;}
+.pagination_case_invest_area .swiper-pagination-bullet-active{background-color:#1f5dbe;}
+.t_asset_transition_area{padding-top:40px;}
+.t_asset_transition_area .tbl{border-bottom:1px solid #ccc; margin-bottom:10px;}
+.t_asset_transition_area  .tbl.type1 table th{height:28px; padding:0;}
+.t_asset_transition_area  .tbl.type1 td {font-size:12px; padding:0; text-align:center; border-bottom:1px solid #f7f7f7; height:40px;}
+.t_asset_transition_area  .tbl.type1 .fix_left td {text-align:left; padding-left:20px;}
+.t_asset_transition_area  .tbl.type1 .scrollx td {text-align: right;padding-right:10px;}
+.chart_asset_transition_area .yaxis_title:after{content:""; display:block; clear:both;}
+.chart_asset_transition_area .yaxis_title{font-size:10px; color:#999; margin-bottom:10px;}
+
+.case_invest_area .tit_type1{padding-bottom:35px;}
+.chart_invest_area_num{height:200px; width:200px; left:50%; margin-left:-100px; position:absolute; z-index:-1; text-align:center; padding-top:73px;}
+.chart_invest_area_main{font-size:22px;}
+.chart_invest_area_main small{font-size:14px; font-weight:400; vertical-align:bottom;}
+.chart_invest_area_sub{font-size:12px; color:#ff0000; margin-top:6px;}
+.chart_invest_area_sub span:last-child:before{content:""; display:inline-block; width:1px; height:10px; background-color:#eee; margin-left:5px; margin-right:5px;}
+
+.t_case_invest_area_wrap{border-top:1px solid #333; margin-top:60px; margin-bottom:10px; border-bottom:1px solid #ccc;}
+.t_case_invest_area_wrap .t_case_invest_tit{border-bottom:1px solid #f4f4f4; display:table; width:100%; padding-left:44px; padding-right:37px; position:relative;}
+.t_case_invest_area_wrap .t_case_invest_tit:before{content:""; display:inline-block; width:14px; height:14px; border-radius:50%; position:absolute; left:20px; top:50%; margin-top:-7px;}
+.t_case_invest_area_wrap .t_case_invest_tit:after{content:"";  width: 0px; height: 0px; position:absolute; right:20px; bottom:15px; border-bottom:7px solid #666;  border-left: 7px solid  transparent;}
+
+.graph01:before{background-color:#8c93ed;}
+.graph02:before{background-color:#ba8bed;}
+.graph03:before{background-color:#ed8bbd;}
+.graph04:before{background-color:#f9b37f;}
+.graph05:before{background-color:#ffe052;}
+.graph06:before{background-color:#cfef50;}
+.graph07:before{background-color:#75e172;}
+.graph08:before{background-color:#48cbc0;}
+.graph09:before{background-color:#67cbff;}
+.graph10:before{background-color:#5091ee;}
+.graph11:before{background-color:#ee7182;}
+
+.t_case_invest_area_wrap .t_case_invest_tit .left {display:table-cell; width:45%; text-align:left; padding:15px 0; font-size:16px;}
+.t_case_invest_area_wrap .t_case_invest_tit .right {display:table-cell; width:55%; text-align:right; font-size:16px;}
+.t_case_invest_area_wrap .t_invest_rate{font-size:12px; margin-top:5px;}
+.t_case_invest_area_wrap .t_invest_rate span:last-child:before{content:""; display:inline-block; width:1px; height:10px; background-color:#eee; margin-left:5px; margin-right:5px;}
+.t_case_invest_area_wrap .t_case_invest_desc_wrap{background-color:#f7f7f7; padding-top:20px; display:none;}
+.t_case_invest_area_wrap .t_case_invest_desc{display:table; width:100%; padding-left:44px; padding-right:37px;}
+.t_case_invest_area_wrap .t_case_invest_desc .left{display:table-cell; width:45%; text-align:left; padding-bottom:25px;}
+.t_case_invest_area_wrap .t_case_invest_desc .left p:last-child{margin-top:5px;}
+.t_case_invest_area_wrap .t_case_invest_desc .right{display:table-cell; width:55%; text-align:right; padding-bottom:20px;}
+.t_case_invest_area_wrap .t_case_invest_desc_close{padding-bottom:20px; padding-right:20px; text-align:right; font-size:12px; color:#666; cursor:pointer; }
+.t_case_invest_area_wrap .t_case_invest_desc_close:after{margin-left:5px; content:""; display:inline-block; width:0; height:0; border-right:5px solid transparent; border-left:5px solid transparent; border-bottom:6px solid #666;}
+
+.normal_invest_area .no_data_box{padding-top:150px;}
